@@ -6,6 +6,7 @@ void setup(){
 titleFont = createFont("BookmanOldStyle-Bold-48",40);//must also tools
 
 quitButtonSetup();
+musicPlayerGUI_Setup();
   
 }
 
