@@ -16,4 +16,5 @@ void draw () {
 
 void mouseClicked() { 
   quitButtonMouseClicked();
+  musicPlayerButtons();
 }
