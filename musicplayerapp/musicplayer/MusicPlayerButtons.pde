@@ -1,4 +1,4 @@
-void(){
+void musicPlayerButtons(){
   //playpause
   //next
   //previous
