@@ -12,8 +12,10 @@ void musicPlayerGUI_Setup(){
   
   
   
+  
   fill(#16F507);
- 
+ellipse(width/2,height*1/5,width/7,width/7);
+ ellipse(width/5,height/2,width/7,width/7);
   
   /* stroke();
   ellipse();
