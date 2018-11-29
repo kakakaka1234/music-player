@@ -1,5 +1,4 @@
 //Global Variables
-color white= #FFFFEF;
 void setup(){
   background(#FFFFEF);
   size (500,600);
@@ -8,6 +7,7 @@ void setup(){
 titleFont = createFont("BookmanOldStyle-Bold-48",40);//must also tools
 musicPlayerGUI_Setup();
 quitButtonSetup();
+
 
   
 }
