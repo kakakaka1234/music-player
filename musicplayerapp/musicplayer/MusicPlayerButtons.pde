@@ -20,9 +20,7 @@ void musicPlayerButtons() {
     fill(regularButton);
     rect(width*3/10,height*2/5,width*2/5,height/5,25);
   }
-
-   rect(width*3/10,height*2/5,width*2/5,height/5,25);
-    fill(#16F507);
+   fill(#16F507);
   triangle(width/3,height*2/5,width/2,height/2,width/3,height*3/5);
   rect(width*3/6,height*2/5,width*1/17,height/5);
   rect(width*4/7,height*2/5,width/17,height/5);
