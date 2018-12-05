@@ -1,3 +1,4 @@
+
 //File / Sketch / Import Library / Add Library / Click Minim
 import ddf.minim.*;
 import ddf.minim.analysis.*;
@@ -29,10 +30,15 @@ void mousePressed() {
 }
 
 void keyPressed() {
-if( key == 'p' || key == 'P'){}
- if( key == 's' || key == 'S'){}
- if( song1.isPlaying())
- { song1.pause();
- song1.rewind();}
- else {song1.rewind();}
- }
+  if (key == 'p' || key == 'P') { //Play-Pause
+    //Add this code from the previous prototype of Play-Pause
+  }
+  if (key == 's' || key == 'S') {//Stop
+    if ( song1.isPlaying() ) {
+      song1.pause();
+      song1.rewind();
+    } else { //Song is not playing
+      song1.rewind();
+    }
+  }
+}
