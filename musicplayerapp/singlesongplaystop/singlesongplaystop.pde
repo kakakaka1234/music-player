@@ -1,4 +1,3 @@
-
 //File / Sketch / Import Library / Add Library / Click Minim
 import ddf.minim.*;
 import ddf.minim.analysis.*;
