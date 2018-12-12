@@ -32,9 +32,9 @@ void mousePressed() {
 }
 
 void keyPressed() {
-  int currentSong = 3; //Must match array variable numberOfSongs
+  int currentSong = 2; //Must match array variable numberOfSongs
   if (key == 'p' || key == 'P') {
-    if ( song[currentSong].isPlaying() ) {
+      if (key == 'p' || key == 'P') {
       song[currentSong].pause();
     } else if ( song[currentSong].position() == song[currentSong].length() ) {
       song[currentSong].rewind();

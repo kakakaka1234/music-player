@@ -13,6 +13,7 @@ quitButtonSetup();
 }
 
 void draw () {
+  musicPlayerGUI_Setup();
   
   quitButtonDraw();
   

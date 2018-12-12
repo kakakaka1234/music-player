@@ -1,7 +1,7 @@
-color purple = #FF03F3;
-color yellow = #FFF703;
-color regularButton = purple;
-color hoverOverButton = yellow;
+color darkblue = #1B0662;
+color lightgreen = #08FC09;
+color regularButton = darkblue;
+color hoverOverButton = lightgreen;
 String title= "Quit";
 
 
