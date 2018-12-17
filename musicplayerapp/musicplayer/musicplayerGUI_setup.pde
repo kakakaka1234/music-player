@@ -13,11 +13,7 @@ void musicPlayerGUI_Setup(){
  
   
   
-  /* stroke();
-  ellipse();
-  stroke(1);
-  ellipse();
-  */
+
   
    
    if (mouseX>width*3/10 && mouseX<width*7/10 && mouseY>height*2/5 && mouseY<height*3/5) {
@@ -33,24 +29,7 @@ void musicPlayerGUI_Setup(){
   rect(width*4/7,height*2/5,width/17,height/5);
 
 
-  
-
- //rect(,,,,15);
  
- //playbuttonsymbol
- /*triangle();
- line();
- line();*/
- 
- //nextandpreviousbutton
- /*
- triangle();
- triangle();
- line();
- triangle();
- triangle();
- line();
- */
  
 
 
