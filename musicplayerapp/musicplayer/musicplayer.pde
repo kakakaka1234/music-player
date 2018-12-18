@@ -8,6 +8,9 @@ import ddf.minim.ugens.*;
 
 
 AudioPlayer song1;
+AudioPlayer song2;
+AudioPlayer song3;
+
 Minim minim;
 
 

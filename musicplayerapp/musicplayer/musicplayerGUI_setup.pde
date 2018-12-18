@@ -10,6 +10,17 @@ void musicPlayerGUI_Setup(){
   ellipse(width*4/5,height/2,width/7,width/7);
   ellipse(width/2,height/2,width/2,width/2);
   
+  
+  
+  //previous
+  fill(#41AD09);
+  triangle(width*4/5,height*8/15,width*6/7,height/2,width*4/5,height*7/15);  
+  
+  
+  //back
+  fill(#41AD09);
+  triangle(width/5,height*7/15,width/7,height/2,width/5,height*8/15);
+  
  
   
   
@@ -27,6 +38,33 @@ void musicPlayerGUI_Setup(){
   triangle(width/3,height*2/5,width/2,height/2,width/3,height*3/5);
   rect(width*3/6,height*2/5,width*1/17,height/5);
   rect(width*4/7,height*2/5,width/17,height/5);
+  
+  //back
+  
+  if (mouseX>width/7 && mouseX<width*17/70 && mouseY>height*7/15 && mouseY<height*8/15) {
+    fill(hoverOverButton);
+    rect(width/7,height*7/15,width/10,height*1/15,15); //Courners Rounded more than Outer Rectangle, change?
+  } else {
+    fill(regularButton);
+    rect(width/7,height*7/15,width/10,height*1/15,15); //Courners Rounded more than Outer Rectangle, change?
+  }
+  fill(#41AD09);
+  triangle(width/5,height*7/15,width/7,height/2,width/5,height*8/15);
+ 
+  
+  
+  
+  //next
+  if (mouseX>width*19/25 && mouseX<width*6/7 && mouseY>height*7/15 && mouseY<height*8/15) {
+    fill(hoverOverButton);
+    rect(width*19/25,height*7/15,width/10,height*1/15,15); //Courners Rounded more than Outer Rectangle, change?
+  } else {
+    fill(regularButton);
+    rect(width*19/25,height*7/15,width/10,height*1/15,15); //Courners Rounded more than Outer Rectangle, change?
+  }
+ fill(#41AD09);
+  triangle(width*4/5,height*8/15,width*6/7,height/2,width*4/5,height*7/15);  
+ 
 
 
  

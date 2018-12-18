@@ -1,4 +1,4 @@
-color darkblue = #1B0662;
+color darkblue = #7EC0F5;
 color lightgreen = #08FC09;
 color regularButton = darkblue;
 color hoverOverButton = lightgreen;
