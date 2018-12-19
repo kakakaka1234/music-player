@@ -7,11 +7,15 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
 
+AudioPlayer song0;
 AudioPlayer song1;
 AudioPlayer song2;
-AudioPlayer song3;
 
 Minim minim;
+int numberOfSongs = 3;
+AudioPlayer[] song = new AudioPlayer[numberOfSongs];
+int currentSong = numberOfSongs - numberOfSongs; //Uses formula or FileIO Memory
+
 
 
 
@@ -42,4 +46,6 @@ void mouseClicked() {
   quitButtonMouseClicked();
   musicPlayerButtons();
   musicSongs();
+  backconsole();
+  nextconsole();
 }

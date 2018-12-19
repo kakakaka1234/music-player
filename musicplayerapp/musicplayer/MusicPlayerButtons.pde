@@ -1,4 +1,6 @@
 Boolean playButton = false;
+Boolean backbutton= false;
+Boolean nextbutton= false;
 
 void musicPlayerButtons() {
    if (mouseX>width*3/10 && mouseX<width*7/10 && mouseY>height*2/5 && mouseY<height*3/5) {
@@ -9,25 +11,6 @@ void musicPlayerButtons() {
     }
     println(playButton);
     
-    
- 
-  
-  
-  
-  println ("Mousex:", mouseX, "\tMouseY:", mouseY);
-  if (mouseX>width*3/10 && mouseX<width*7/10 && mouseY>height*2/5 && mouseY<height*3/5) { //Hover Over
-    fill(hoverOverButton);
-    rect(width*3/10,height*2/5,width*2/5,height/5,25);
-  } else {
-    fill(regularButton);
-    rect(width*3/10,height*2/5,width*2/5,height/5,25);
-  }
-   fill(#16F507);
-  triangle(width/3,height*2/5,width/2,height/2,width/3,height*3/5);
-  rect(width*3/6,height*2/5,width*1/17,height/5);
-  rect(width*4/7,height*2/5,width/17,height/5);
-  
-  
  if (mouseX>width*3/10 && mouseX<width*7/10 && mouseY>height*2/5 && mouseY<height*3/5) {
     //Origonal Code from Single Button
     
@@ -39,13 +22,13 @@ void musicPlayerButtons() {
      println(playButton);
  
 
-    if ( song1.isPlaying() ) {
-      song1.pause();
-    } else if ( song1.position() == song1.length() ) {
-      song1.rewind();
-      song1.play();
+    if ( song0.isPlaying() ) {
+      song0.pause();
+    } else if ( song1.position() == song0.length() ) {
+      song0.rewind();
+      song0.play();
     } else {
-      song1.play();
+      song0.play();
     }
   }
 }
@@ -54,6 +37,8 @@ void musicPlayerButtons() {
   
 }
 void backconsole(){
+     if (mouseX>width/7 && mouseX<width*17/70 && mouseY>height*7/15 && mouseY<height*8/15) {
+
       if (song[currentSong].isPlaying()) {
       song[currentSong].pause();
       song[currentSong].rewind();
@@ -75,7 +60,32 @@ void backconsole(){
       } else {
         currentSong -= 1; // Equivalent code: currentSong = currentSong + 1
         println ("Current Song after the next or back button, but not the first song, ", "Number: "+currentSong); //For Debugging
+      }}}}
+      //next 
+      void nextconsole(){
+      if (mouseX>width*19/25 && mouseX<width*6/7 && mouseY>height*7/15 && mouseY<height*8/15) {
+       if (song[currentSong].isPlaying()) {
+      song[currentSong].pause();
+      song[currentSong].rewind();
+      if ( currentSong == numberOfSongs - 1 ) {
+        println ("Current Song is the last song, ", "Number: " + currentSong); //For Debugging
+        currentSong = numberOfSongs - numberOfSongs;
+        println ("Current Song is now the first song, ", "Number: " + currentSong); //For Debugging
+      } else {
+        currentSong += 1; // Equivalent code: currentSong = currentSong + 1
+        println ("Current Song after the next or back button, but not the last song", "\tNumber: "+currentSong); //For Debugging
+      }
+      song[currentSong].play();
+    } else {
+      song[currentSong].rewind();
+      if ( currentSong == numberOfSongs - 1 ) {
+        println ("Current Song is the last song, ", "Number: " + currentSong); //For Debugging
+        currentSong = numberOfSongs - numberOfSongs;
+        println ("Current Song is now the first song or song, ", "Number: " + currentSong); //For DebuggingcurrentSong = numberOfSongs - numberOfSongs;
+      } else {
+        currentSong += 1; // Equivalent code: currentSong = currentSong + 1
+        println ("Current Song after the next or back button, but not the last song, ", "Number: " + currentSong); //For Debugging
       }
     }
   }
-}
+      }
