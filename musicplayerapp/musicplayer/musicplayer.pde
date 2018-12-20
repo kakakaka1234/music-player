@@ -16,36 +16,27 @@ int numberOfSongs = 3;
 AudioPlayer[] song = new AudioPlayer[numberOfSongs];
 int currentSong = numberOfSongs - numberOfSongs; //Uses formula or FileIO Memory
 
-
-
-
-
-void setup(){
+void setup() {
   background(#FFFFEF);
-  size (500,600);
+  size (500, 600);
   //println("start of console");
-//printArray(fontlist);//for listing all possible fonts to choose, then createFont
-titleFont = createFont("BookmanOldStyle-Bold-48",40);//must also tools
-musicPlayerGUI_Setup();
-quitButtonSetup();
-musicSongs();
-
-
-
-  
+  //printArray(fontlist);//for listing all possible fonts to choose, then createFont
+  titleFont = createFont("BookmanOldStyle-Bold-48", 40);//must also tools
+  musicPlayerGUI_Setup();
+  quitButtonSetup();
+  musicSongs();
 }
 
 void draw () {
   musicPlayerGUI_Setup();
-  
+
   quitButtonDraw();
-  
 }
 
 void mouseClicked() { 
   quitButtonMouseClicked();
   musicPlayerButtons();
-  musicSongs();
+  //musicSongs();
   backconsole();
   nextconsole();
 }
